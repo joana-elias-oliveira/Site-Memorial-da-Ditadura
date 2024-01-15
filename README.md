@@ -1,2 +1,2 @@
 # Site-Memorial-da-Ditadura
-![Imagem Inicial]()
+![Imagem Inicial](MemorialdaResistencia/images/init.png)
