@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorial da Resistência</title>
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <section class="flex">
+
+        <a href="#home" class="logo">
+            <img src="images/resistencia.png" alt="">
+        </a>
+    
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#carousel">história</a>
+            <a href="#menu">Galeria</a>
+            <a href="#products">Obras</a>
+            <a href="#review">Depoimentos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </section>
+
+</header>
+
+
+<div class="home-container">
+    <div class="shadow-overlay"></div>
+    <section class="home" id="home">
+        
+        <div class="content">
+            <h3>Memorial da Resistência</h3>
+            <p>Navegue por este memorial dedicado a um período crucial da história do Brasil - a Ditadura Militar. Explore as seções detalhadas, descubra as histórias de figuras notáveis e mergulhe na rica tapeçaria de eventos, obras culturais e depoimentos pessoais que moldaram essa época.</p>
+            <a href="#about" class="btn">Comece sua Jornada</a>
+        </div>
+        
+    
+    </section>
+
+</div>
+
+<br><br>
+<section class="about" id="about">
+    <h1 class="heading"> <span>Contexto</span> Histórico </h1>
+    <div class="carousel" id="carousel">
+        <div class="carousel-container">
+            <img src="images/slide1.png" alt="Imagem 1">
+            <img src="images/slide2.png" alt="Imagem 2">
+            <img src="images/slide3.png" alt="Imagem 3">
+            <img src="images/slide4.png" alt="Imagem 4">
+            <img src="images/slide5.png" alt="Imagem 5">
+            <img src="images/slide6.png" alt="Imagem 6">
+            <img src="images/slide7.png" alt="Imagem 7">
+            <img src="images/slide8.png" alt="Imagem 8">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="carousel-indicators"></div>
+    </div>
+    
+</div>
+
+<section class="menu" id="menu">
+<br><br><br><br><br>
+    <h1 class="heading"> Galeria de Memórias <span>da Ditadura </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images//2.jpg" alt="" data-fullscreen="images//2.jpg">
+            <h3>Libélula pousa em baioneta do exército durante evento militar</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/3.jpg" alt="" data-fullscreen="images//3.jpg">
+            <h3>Estudante de medicina durante protesto na Cinelândia, em 1968</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/4.jpg" alt="" data-fullscreen="images//4.jpg">
+            <h3>Estudantes e militares entram em confronto durante passeata</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/5.jpg" alt="" data-fullscreen="images//5.jpg">
+            <h3>Estudantes e militares entram em confronto durante passeata.</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/6.jpg" alt="" data-fullscreen="images//6.jpg">
+            <h3>Cavalaria da polícia avança sobre estudantes</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/7.jpg" alt="" data-fullscreen="images//7.jpg">
+            <h3>Manifestante é carregada por colegas</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/8.jpg" alt="" data-fullscreen="images//8.jpg">
+            <h3>Manifestação de jovens pelo fim da ditadura militar</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/9.jpg" alt="" data-fullscreen="images//9.jpg">
+            <h3>Censura como umas das características do período da Ditadura Militar</h3>
+        </div>
+
+        <div class="box">
+            <img src="images/10.jpg" alt="" data-fullscreen="images//10.jpg">
+            <h3>Blindados ocupam a Avenida Presidente Vargas em abril de 1968</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="products" id="products">
+    <h1 class="heading">Memorial de Obras <span>Arte e Cultura</span></h1>
+
+    <div class="controls">
+        <div class="genre-selector">
+            <label for="genre-select">Selecione um Gênero:</label>
+            <select id="genre-select">
+                <option value="all">Todos</option>
+                <option value="musica">Músicas</option>
+                <option value="teatro">Teatro</option>
+                <option value="cinema">Cinema</option>
+                <option value="livro">Livros</option>
+            </select>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Pesquisar obras...">
+        </div>
+        
+    </div>
+
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+
+            <!-- musica -->
+            <div class="swiper-slide swiper-card card musica" data-card-name="Calice">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/9y2xB90A0CY?si=echhiOityg7bw3gD" target="_blank">
+                        <img src="images/musicas/calice.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+                </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Alegria, Alegria">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/hmK9GylXRh0?si=DTQQ-PNYod2fXxaB" target="_blank">
+                        <img src="images/musicas/Al3egria.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Pra não dizer que não falei das flores">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/KdvsXn8oVPY?si=mIXqTY3kvSJOv6E1" target="_blank">
+                        <img src="images/musicas/flores.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Elis Regina - O Bêbado e a Equilibrista">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/1g_p4Xcn5CE?si=co0h56-btBNtQugB" target="_blank">
+                        <img src="images/musicas/bebado.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Sérgio Sampaio - Bloco Na Rua">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/rsiAN__ii7E?si=BIImvA5jxAjwujxM" target="_blank">
+                        <img src="images/musicas/bloco.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Chico Buarque - Apesar de Você">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/bGAJlOwUgHY?si=zcdD6FIsGPVOFafD" target="_blank">
+                        <img src="images/musicas/apesar.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Caetano Veloso - é proibido proibir">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/7hYxfP5q5og?si=gkfYw7y7U2bXXysY" target="_blank">
+                        <img src="images/musicas/proibida.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card musica" data-card-name="Caetano Veloso, Maria Gadú - Vaca Profana">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://youtu.be/MOXTfMQHutQ?si=lC8zpk1qxwIGGRXV" target="_blank">
+                        <img src="images/musicas/vaca.jpg" alt="Música 1"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Teatro -->
+            <div class="swiper-slide swiper-card card teatro" data-card-name="Liberdade, Liberdade, de Millôr Fernandes e Flávio Rangel">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.passeiweb.com/liberdade_liberdade/" target="_blank">
+                        <img src="images/teatro/liberdade.jpg" alt="Teatro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card teatro" data-card-name="papa-highirte">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://grupotapa.com.br/espetaculos/papa-highirte/" target="_blank">
+                        <img src="images/teatro/papa.jpg" alt="Teatro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card teatro" data-card-name="Abajur Lilás">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.assistoporquegosto.com.br/blog/index.php/abajur-lilas/" target="_blank">
+                        <img src="images/teatro/abajur.jpg" alt="Teatro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card teatro" data-card-name="Roda Viva">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://enciclopedia.itaucultural.org.br/evento405843/roda-viva" target="_blank">
+                        <img src="images/teatro/roda.jpg" alt="Teatro 1"></a>
+                    </div>
+                </div>
+            </div>
+    
+            
+            <!-- cinema -->
+            <div class="swiper-slide swiper-card card cinema" data-card-name="Batismo de Sangue">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://app.primevideo.com/detail?gti=amzn1.dv.gti.34bab849-e044-22e6-8488-379d3e2d8e1b&ref_=atv_dp_share_mv&r=web" target="_blank"><img src="images/FILMES/batismo.jpg" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="Lamarca">
+                <div class="card-content">
+                    <div class="image">
+                     <a href="https://youtu.be/wv_E9M2zcbw?si=L0X3faUSNqUB44iD" target="_blank"><img src="images/FILMES/lamarca.jpg" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="O que é isso companheiro?">
+                <div class="card-content">
+                    <a href=" https://globoplay.globo.com/o-que-e-isso-companheiro/t/7TXqxPchRv/" target="_blank"><div class="image">
+                        <img src="images/FILMES/oq.jpg" alt="Cinema 1">
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="O dia que durou 21 anos">
+                <div class="card-content">
+                    <div class="image">
+                        <a href=" https://youtu.be/QJCugIKcWNs?si=40y4o8Gl8vuieZgo" target="_blank"> 
+                        <img src="images/FILMES/o dia.jpg" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="Tatuagem">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.netflix.com/watch/81295580?s=a&trkid=274143858&t=6&trg=cp" target="_blank">
+                        <img src="images/FILMES/tatuagem.jpg" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="ZuuAngel">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.primevideo.com/detail/0R1Y22A8YF7VB6BPCX53XLM2CM/ref=atv_dp_share_cu_r" target="_blank">
+                        <img src="images/FILMES/zuzu.jpg" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="Cabra-Cega">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://app.primevideo.com/detail?gti=amzn1.dv.gti.2cba5145-05ea-4167-26b6-e99285d6ed24&ref_=atv_dp_share_mv&r=web" target="_blank">
+                        <img src="images/FILMES/cabra.png" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card cinema" data-card-name="marighella">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://globoplay.globo.com/marighella/t/gpJRB7PKjY/?origemId=91698" target="_blank">
+                        <img src="images/FILMES/mari.jpg" alt="Cinema 1"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Livros -->
+            <div class="swiper-slide swiper-card card livro" data-card-name="O mundo Socialismo">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://blogdaboitempo.com.br/guia-de-leitura-caio-prado-adc28/" target="_blank">
+                        <img src="images/livros/soocialismo.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="Historia militar no brasil">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://livraria.senado.leg.br/historia-militar-do-brasil-vol-192" target="_blank">
+                        <img src="images/livros/historia.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="Torturas e torturados">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.marxists.org/portugues/tematica/livros/diversos/torturas_torturados.htm" target="_blank">
+                        <img src="images/livros/tortura.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="A revolução Brasileira">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.amazon.com.br/Revolução-Brasileira-Caio-Prado-Junior/dp/851108004X" target="_blank">
+                        <img src="images/livros/revolucao.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="Dez Historias imorais">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.levyleiloeiro.com.br/peca.asp?ID=378794" target="_blank">
+                        <img src="images/livros/dez.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="copacabana">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.amazon.com.br/Um-Nazista-Copacabana-Ubiratan-Muarrek/dp/8532530060" target="_blank">
+                        <img src="images/livros/copacabana.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="zero">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.amazon.com.br/Zero-Ignácio-Loyola-Brandão/dp/8526024906" target="_blank">
+                        <img src="images/livros/0.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-card card livro" data-card-name="o cobrador">
+                <div class="card-content">
+                    <div class="image">
+                        <a href="https://www.amazon.com.br/Cobrador-Rubem-Fonseca/dp/8522011184" target="_blank">
+                        <img src="images/livros/cobrador.jpg" alt="Livro 1"></a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</section>
+
+<section class="review" id="review">
+
+    <h1 class="heading">Alguns<span> Depoimentos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>"Como artista, enfrentei a censura e a perseguição devido ao conteúdo político de minhas obras. Muitas vezes, tive que esconder mensagens críticas nas entrelinhas das minhas músicas e pinturas para evitar a censura."</p>
+            <h3> Ana, artista</h3>
+        </div>
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>"Fui professora durante a ditadura. Ensinar era um ato político, e muitos de meus colegas foram perseguidos por expressarem suas opiniões em sala de aula. A educação foi um campo de batalha silencioso contra o regime."</p>
+            <h3> Teresa, professora</h3>
+        </div>
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>"Eu era uma criança durante a ditadura, e minha família vivia com medo constante. A polícia invadiu nossa casa em várias ocasiões em busca de meu pai, que era um sindicalista."</p>
+            <h3> Rafael, filho de ativista</h3>
+        </div>
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>""Como jornalista, enfrentei censura e perseguição constante. Era um desafio reportar a verdade em um ambiente tão repressivo, mas muitos de nós o fizeram para manter a chama da informação acesa."</p>
+            <h3> Luísa, jornalista</h3>
+        </div>
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>"Minha família foi forçada a fugir do Brasil durante a ditadura por causa de nossas atividades políticas. Perdemos nossa casa e nossos entes queridos foram presos. Foi um período de muito medo e incerteza."</p>
+            <h3> Maria, exilada política.</h3>
+        </div>
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p> "Eu fui preso e torturado durante a ditadura. A tortura deixou marcas físicas e emocionais que carrego até hoje. É importante lembrar o que aconteceu para que nunca mais se repita."</p>
+            <h3> João, ativista político.
+
+            </h3>
+        </div>
+
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+    <h1 class="heading"> Inscr<span>eva-se</span></h1>
+    <div class="row">
+        <div class="texto">
+            <h1>Preencha com suas informações</h1>
+            <p>Preencha o formulário abaixo para se inscrever e receber informações relacionadas à ditadura, eventos, ações de justiça e atividades de memória histórica.</p>
+        </div>
+        <div class="form-container">
+            <form id="myForm" action="" method="post">
+                <div class="form-column">
+                    <div class="inputBox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="Nome" id="name" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-phone"></span>
+                        <input type="number" placeholder="Número" id="phone" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-calendar"></span>
+                        <input type="date" placeholder="Data de Nascimento" id="date" required>
+                    </div>
+                    <div class="inputBox"> 
+                        <i class="fa fa-fw fa-comments"></i>
+                        <textarea type="message" placeholder="O que achou do site?" required></textarea>
+                    </div>  
+                    <div class="inputBox">
+                        <label>Interesses:</label>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interesse1" name="interesses" value="historia">
+                            <label for="interesse1">História</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interesse2" name="interesses" value="eventos">
+                            <label for="interesse2">Eventos</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="interesse3" name="interesses" value="justica">
+                            <label for="interesse3">Ações de Justiça</label>
+                        </div>
+                    </div>                  
+                </div> 
+                <div class="form-column">
+                    <div class="inputBox">
+                        <span class="fas fa-map-marker"></span>
+                        <input type="text" placeholder="CEP" id="cep" required>
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-road"></span>
+                        <input type="text" placeholder="Rua" id="rua">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-map"></span>
+                        <input type="text" placeholder="Bairro" id="bairro">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-map-pin"></span>
+                        <input type="text" placeholder="Cidade" id="cidade">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-flag"></span>
+                        <input type="text" placeholder="Estado" id="estado">
+                    </div>
+                    <div class="inputBox">
+                        <label for="password"><span class="fas fa-lock" required></span> Senha:</label>
+                        <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                    </div>
+                    
+                </div>
+                <div class="button-container">
+                    
+                    <input type="reset" name="reset_btn" value="Redefinir" class="btn">
+                    <input type="submit" value="Inscrever-se" class="btn">
+                </div>
+            </form>
+        </div>
+</section>
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://instagram.com/joziinha.oliveira?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank" class="fab fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/joanaoliveiraelias/" target="_blank" class="fab fa-linkedin"></a>
+        <a href="https://github.com/joana-elias-oliveira" target="_blank" class="fab fa-github"></a>
+    </div>
+
+    <div class="credit">© 2023 Copyright:<span> Memorial da Ditadura</span> </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
